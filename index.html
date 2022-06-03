@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD app</title>
+  <link rel="stylesheet" href="index.css"></link>
+</head>
+<body>
+  <div class="main-wrapper">
+    <h2>JavaScript CRUD Operations Using LocalStorage</h2>
+    <div class="panels-wrap">
+      <div class="left-panel">
+        <div class="insert-box cardbox">
+          <p><b>Insert / Update Todo</b></p>
+          <span>Enter a Todo and Time-in to add and / or update records</span>
+          <div class="input-wrapper">
+            <input id="inputKey" type="text" placeholder="Enter Todo" />
+            <input id="inputValue" type="text" placeholder="Enter Time In" />
+          </div>
+          <button type="button" id="btnInsert">Insert Data</button>
+        </div>
+        <div class="read-box cardbox">
+          <p><b>Read Data</b></p>
+          <span>Enter a Todo for Time-in record</span>
+          <div class="input-wrapper">
+            <input
+              id="inputReadDataKey"
+              type="text"
+              placeholder="Enter Todo"
+            />
+            <button type="button" id="btnReadData">Read Data</button>
+          </div>
+          <p id="readedDataHere"></p>
+        </div>
+        <div class="delete-box cardbox">
+          <p><b>Delete Data</b></p>
+          <span
+            >Enter a Todo to delete the record associated with that key</span
+          >
+          <div class="input-wrapper">
+            <input id="inputDelKey" type="text" placeholder="Enter Todo" />
+            <button type="button" id="btnDelete">Delete Data</button>
+          </div>
+        </div>
+      </div>
+      <div class="right-panel">
+        <div class="display-all-box cardbox"> 
+            <p><b>Local Storage</b></p>
+            <span id="availRecords"></span>
+            <p id="autoFILL"></p>
+            <div id="isOutput"></div>
+            <div id="deleteAllBtn" class="delete-all">
+              <button type="button" id="btnAllDelete">Delete All Data</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="index.js" ></script>
+</body>
+</html>
